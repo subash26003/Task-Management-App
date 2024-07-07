@@ -1,13 +1,157 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
+body{
+  background-color:  rgba(25, 173, 173, 0.342);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto';
+}
+.App{
+  background-color: rgba(25, 173, 173, 0.607);
+  height: min(100vh);
+  width: min(100% , 500px);
+  border:5px solid black;
+  border-radius: 10px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.pageHeading{
+  color:aliceblue;
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+  
+}
+.addTaskCard{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.addTaskForm {
+   display: flex;
+   flex-direction: column;
+   width: 400px;
+   margin-top:30px; 
+}
+.addTaskForm label{
+  margin-right:auto; 
+  color: rgba(0, 0, 0, 0.849);
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.addTaskForm input{
+  display: block;
+  height:30px;
+  padding-left: 15px;
+  border: 0px solid rgba(25, 173, 173, 0.607);
+  background-color: rgba(224, 236, 236, 0.918);
+  border-radius: 5px;
+  margin-bottom: 15px;
+
+}
+.addTaskForm input:focus,input:enabled{
+  border-width:0px;
+}
+.addTaskForm button{
+  display: block;
+  width:50px ;
+  margin-left: auto;
+  padding: 5px;
+  border-width:0 ;
+  border-radius: 5px;
+  font-weight: bold;
+  color:white;
+  background-color: rgb(14, 108, 240);
+}
+
+.ContentComponentList{
+  list-style-type: none;
+  margin: auto;
+}
+.ContentComponentList li{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+   margin: 20px auto;
+   border-width: 0;
+   border-radius: 5px;
+   background-color: rgba(35, 18, 132, 0.32);
+   width: 400px
+ 
+}
+.emptyList{
+  text-align: center;
+  color:rgba(255, 0, 0, 0.815);
+  font-weight: bold;
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  margin-top: 25%;
+}
+
+.inputElement[type="checkbox"]{
+  width: 20px;
+  accent-color: rgb(26, 29, 219);
+  margin:0;
+  padding: 0;
+}
+.inputElement:hover{
+  cursor: pointer;
+  margin:0;
+  padding: 0;
+  
+}
+.labelElement{
+ margin-right:auto ;
+ margin-left: 20px;
+ color: aliceblue;
+ font-weight: bold;
+ font-size: 1.25rem;
+ font-family: 'Roboto';
+ user-select: none;
+ 
+}
+.buttonElement{
+  background-color: rgba(0, 179, 255, 0.776);
+  border-width: 0;
+  color:whitesmoke;
+  border-radius: 15px;
+  padding: 0px 15px;
+  font-weight: bold;
+  transition : all .5s
+}
+
+.buttonElement:hover,
+.buttonElement:focus{
+  transform: scale(1.1);
+  background-color: white;
+  color:rgb(22, 26, 22);
+}
+
+.footerCard{
+  position: fixed;
+  bottom: 0;
+  left:50%;
+  transform: translateX(-50%);
+  width:min(100%,450px);
+  padding: 15px 0px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+.footerCard p{
+  text-align: center;
+  color:whitesmoke;
+  letter-spacing: .5px;
+  font-weight: bold;
 }

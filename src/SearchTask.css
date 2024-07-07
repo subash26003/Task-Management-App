@@ -1,0 +1,19 @@
+.searchCard{
+    display: flex;
+    justify-content: center;
+}
+.searchCard form {
+    display: flex;
+    width: 400px;
+}
+.searchCard form input{
+    margin-right:auto ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height:30px;
+  padding-left: 15px;
+  border: 0px solid rgba(25, 173, 173, 0.607);
+  background-color: rgba(224, 236, 236, 0.918);
+  border-radius: 5px;
+}
